@@ -38,7 +38,7 @@ void nose(float x, float y) {
 
 void mouth(float x, float y) {
   arc(200 + x, 450 + y, 100, 100, 0, PI);
-  line(250 + x, 450 + y, 250 + x, 450 + y);
+  line(150 + x, 450 + y, 250 + x, 450 + y);
 }
 
 void hat(float x, float y) {
