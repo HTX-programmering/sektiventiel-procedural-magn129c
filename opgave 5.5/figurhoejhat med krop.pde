@@ -3,49 +3,46 @@ void setup() {
 }
 
 void draw() {
-  head(0, 0, 800, 0);
+  entireBody(0, 0, 800, 0);
 }
 
-void head(float x1, float y1, float x2, float y2) {
-  strokeWeight(1);
-  noFill();
+void entireBody(float x1, float y1, float x2, float y2) {
+  resetFillandStrokeWeight();
   face(x1, y1);
   face(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   eyes(x1, y1);
   eyes(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   nose(x1, y1);
   nose(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   mouth(x1, y1);
   mouth(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   body(x1, y1);
   body(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   arms(x1, y1);
   arms(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   legs(x1, y1);
   legs(x2, y2);
   
-  strokeWeight(1);
-  noFill();
+  resetFillandStrokeWeight();
   hat(x1, y1);
   hat(x2, y2);
+}
+
+void resetFillandStrokeWeight() {
+  strokeWeight(1);
+  fill(255, 255, 255);
 }
 
 void face(float x, float y) {
